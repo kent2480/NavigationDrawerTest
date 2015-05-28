@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FCDA83"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radiobtn_gps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GPS"
+                android:checked="true"
+                android:typeface="monospace"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/radiobtn_network"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NETWORK"
+                android:checked="false"
+                android:typeface="monospace"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/radiobtn_passive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PASSIVE"
+                android:checked="false"
+                android:typeface="monospace"
+                android:layout_weight="1"/>
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/linear_1"
+        android:layout_marginTop="5dp"
+        android:background="#000000"/>
+
+
+    <LinearLayout
+        android:id="@+id/linear_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_1"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/req_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="80dp"
+            android:text="@string/req_time"
+            android:typeface="monospace"/>
+
+        <EditText
+            android:id="@+id/input_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:text="0"
+            android:textSize="24px"/>
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/start"
+            android:typeface="monospace"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/req_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="80dp"
+            android:text="@string/req_dis"
+            android:typeface="monospace"/>
+
+
+        <EditText
+            android:id="@+id/input_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:text="0"
+            android:textSize="24px">
+        </EditText>
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/stop"
+            android:typeface="monospace"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/linear_3"
+        android:layout_marginTop="5dp"
+        android:background="#000000"/>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_2"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="GPS Fix Information"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="monospace" />
+
+        <!-- /// -->
+        <TextView
+            android:id="@+id/lon"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info"
+            android:layout_marginLeft="5dp"
+            android:text="Longitude:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:typeface="monospace"/>
+
+        <TextView
+            android:id="@+id/out_lon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lon"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/lon"
+            android:typeface="monospace"
+            android:textColor="#999999"/>
+
+        <View
+            android:layout_width="160dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/out_lon"
+            android:layout_alignLeft="@+id/out_lon"
+            android:background="#000000" />
+        <!-- /// -->
+        
+        <TextView
+            android:id="@+id/lat"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lon"
+            android:layout_below="@+id/lon"
+            android:text="Latitude:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:typeface="monospace"/>
+
+        <TextView
+            android:id="@+id/out_lat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lat"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/lon"
+            android:typeface="monospace"
+            android:textColor="#999999"/>
+
+        <View
+            android:layout_width="160dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/out_lat"
+            android:layout_alignLeft="@+id/out_lat"
+            android:background="#000000" />
+        <!-- /// -->
+
+        <TextView
+            android:id="@+id/alt"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lon"
+            android:layout_below="@+id/lat"
+            android:text="Altitude:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:typeface="monospace"/>
+
+        <TextView
+            android:id="@+id/out_alt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/alt"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/lon"
+            android:typeface="monospace"
+            android:textColor="#999999"/>
+
+        <View
+            android:layout_width="160dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/out_alt"
+            android:layout_alignLeft="@+id/out_alt"
+            android:background="#000000" />
+        <!-- /// -->
+        
+        <TextView
+            android:id="@+id/acc"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lon"
+            android:layout_below="@+id/alt"
+            android:text="Accuracy:"
+            android:typeface="monospace"/>
+        
+        <TextView
+            android:id="@+id/out_acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/acc"
+            android:layout_alignBottom="@+id/acc"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/lon"
+            android:typeface="monospace"
+            android:textColor="#999999"/>
+
+        <View
+            android:layout_width="160dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/out_acc"
+            android:layout_alignLeft="@+id/out_acc"
+            android:background="#000000" />
+        <!-- /// -->
+
+        <TextView
+            android:id="@+id/bea"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lon"
+            android:layout_below="@+id/acc"
+            android:text="Bearing:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:typeface="monospace"/>
+
+        <TextView
+            android:id="@+id/out_bea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bea"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/lon"
+            android:typeface="monospace"
+            android:textColor="#999999"/>
+
+        <View
+            android:layout_width="160dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/out_bea"
+            android:layout_alignLeft="@+id/out_bea"
+            android:background="#000000" />
+        <!-- /// -->
+
+        <Button
+            android:id="@+id/tcxo_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/bea"
+            android:layout_marginTop="28dp"
+            android:text="TCXO Start"
+            android:typeface="monospace"/>
+
+        <Button
+            android:id="@+id/tcxo_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tcxo_start"
+            android:layout_alignBottom="@+id/tcxo_start"
+            android:layout_toRightOf="@+id/tcxo_start"
+            android:text="TCXO Stop"
+            android:typeface="monospace"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+<!-- From: file:/D:/Android-Studio-App/NavigationDrawer/Application/src/main/res/layout/fragment_gps.xml -->

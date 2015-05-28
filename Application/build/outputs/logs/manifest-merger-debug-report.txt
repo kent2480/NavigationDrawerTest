@@ -11,8 +11,28 @@ ADDED from AndroidManifest.xml:17:1
 		ADDED from AndroidManifest.xml:19:5
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
-application
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from AndroidManifest.xml:22:5
+	android:name
+		ADDED from AndroidManifest.xml:22:22
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from AndroidManifest.xml:23:5
+	android:name
+		ADDED from AndroidManifest.xml:23:22
+uses-permission#android.permission.INTERNET
 ADDED from AndroidManifest.xml:24:5
+	android:name
+		ADDED from AndroidManifest.xml:24:22
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:26:5
+	android:name
+		ADDED from AndroidManifest.xml:26:22
+uses-permission#android.permission.WAKE_LOCK
+ADDED from AndroidManifest.xml:27:5
+	android:name
+		ADDED from AndroidManifest.xml:27:22
+application
+ADDED from AndroidManifest.xml:29:5
 MERGED from com.android.support:support-v13:21.0.2:16:5
 MERGED from com.android.support:support-v4:21.0.2:16:5
 MERGED from com.android.support:appcompat-v7:21.0.2:16:5
@@ -21,35 +41,39 @@ MERGED from com.android.support:recyclerview-v7:21.0.2:17:5
 MERGED from com.android.support:support-v4:21.0.2:16:5
 MERGED from com.android.support:cardview-v7:21.0.2:16:5
 	android:label
-		ADDED from AndroidManifest.xml:27:9
+		ADDED from AndroidManifest.xml:32:9
 	android:allowBackup
-		ADDED from AndroidManifest.xml:25:9
+		ADDED from AndroidManifest.xml:30:9
 	android:icon
-		ADDED from AndroidManifest.xml:26:9
+		ADDED from AndroidManifest.xml:31:9
 	android:theme
-		ADDED from AndroidManifest.xml:28:9
+		ADDED from AndroidManifest.xml:33:9
 activity#com.example.android.navigationdrawer.MainActivity
-ADDED from AndroidManifest.xml:29:9
+ADDED from AndroidManifest.xml:34:9
 	android:label
-		ADDED from AndroidManifest.xml:31:13
+		ADDED from AndroidManifest.xml:36:13
 	android:name
-		ADDED from AndroidManifest.xml:30:13
+		ADDED from AndroidManifest.xml:35:13
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:32:13
+ADDED from AndroidManifest.xml:37:13
 action#android.intent.action.MAIN
-ADDED from AndroidManifest.xml:33:17
+ADDED from AndroidManifest.xml:38:17
 	android:name
-		ADDED from AndroidManifest.xml:33:25
+		ADDED from AndroidManifest.xml:38:25
 category#android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:35:17
+ADDED from AndroidManifest.xml:40:17
 	android:name
-		ADDED from AndroidManifest.xml:35:27
+		ADDED from AndroidManifest.xml:40:27
 activity#com.example.android.navigationdrawer.NavigationDrawerActivity
-ADDED from AndroidManifest.xml:38:9
+ADDED from AndroidManifest.xml:43:9
 	android:label
-		ADDED from AndroidManifest.xml:40:13
+		ADDED from AndroidManifest.xml:45:13
 	android:name
-		ADDED from AndroidManifest.xml:39:13
+		ADDED from AndroidManifest.xml:44:13
+service#com.example.android.navigationdrawer.TcxoService
+ADDED from AndroidManifest.xml:48:9
+	android:name
+		ADDED from AndroidManifest.xml:48:18
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 MERGED from com.android.support:support-v13:21.0.2:15:5

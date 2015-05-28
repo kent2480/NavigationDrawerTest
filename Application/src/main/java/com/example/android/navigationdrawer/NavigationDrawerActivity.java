@@ -181,13 +181,13 @@ public class NavigationDrawerActivity extends Activity
         Log.d(TAG, "selectItem() position = " + position);
         Fragment fragment;
 
-        if(position == 0) {
-            fragment = GpsFragment.newInstance(position);
-        } else {
-            // update the main content by replacing fragments
-            fragment = PlanetFragment.newInstance(position);
+        switch(position) {
+            case 0:
+                fragment = GpsFragment.newInstance();
+                break;
+            default:
+                fragment = PlanetFragment.newInstance(position);
         }
-
 
 
         FragmentManager fragmentManager = getFragmentManager();

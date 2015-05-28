@@ -230,6 +230,12 @@
     <string name="navigationdraweractivity_description">This example illustrates a common usage of the DrawerLayout widget in the Android
             support library.</string>
     <string name="navigationdraweractivity_title">Navigation Drawer Example</string>
+    <!-- From: file:/D:/Android-Studio-App/NavigationDrawer/Application/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="req_dis">Distance:</string>
+    <string name="req_time">Time:</string>
+    <string name="start">Start GPS</string>
+    <string name="stop">Stop GPS</string>
     <!-- From: file:/D:/Android-Studio-App/NavigationDrawer/Application/src/main/res/values/template-styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="Theme.Sample"/>

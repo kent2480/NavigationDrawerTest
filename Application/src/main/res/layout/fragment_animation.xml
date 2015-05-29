@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2014 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#666666"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative_translate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_translate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(A) Translate Animation"
+                android:textColor="#000000"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_translate"
+                android:layout_below="@+id/tv_translate"
+                android:text="Start Translate"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_translate"
+                android:layout_below="@+id/btn_translate"
+                android:src="@drawable/android_1"/>
+
+            <View
+                android:id="@+id/view_translate"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_translate"
+                android:layout_marginTop="150dp"
+                android:background="#000000"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relative_scale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_translate">
+
+            <TextView
+                android:id="@+id/tv_scale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(B) Scale Animation"
+                android:textColor="#000000"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_scale"
+                android:layout_below="@+id/tv_scale"
+                android:text="Start Translate"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_scale"
+                android:layout_below="@+id/btn_scale"
+                android:src="@drawable/android_2"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_scale"
+                android:layout_marginTop="150dp"
+                android:background="#000000"
+                android:paddingTop="30dp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relative_rotate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_scale">
+
+            <TextView
+                android:id="@+id/tv_rotate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(C) Rotate Animation"
+                android:textColor="#000000"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_rotate"
+                android:layout_below="@+id/tv_rotate"
+                android:text="Start Translate"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_rotate"
+                android:layout_below="@+id/btn_rotate"
+                android:src="@drawable/android_3"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_rotate"
+                android:layout_marginTop="150dp"
+                android:background="#000000"
+                android:paddingTop="30dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative_rotate">
+
+            <TextView
+                android:id="@+id/tv_alpha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(D) Alpha Animation"
+                android:textColor="#000000"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_alpha"
+                android:layout_below="@+id/tv_alpha"
+                android:text="Start Translate"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_alpha"
+                android:layout_below="@+id/btn_alpha"
+                android:src="@drawable/android_1"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_alpha"
+                android:layout_marginTop="150dp"
+                android:background="#000000"
+                android:paddingTop="30dp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

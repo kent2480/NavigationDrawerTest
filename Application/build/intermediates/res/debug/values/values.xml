@@ -4,6 +4,7 @@
     <eat-comment/>
     <string-array name="planets_array">
         <item>GpsTest</item>
+        <item>Animation</item>
         <item>Earth</item>
         <item>Saturn</item>
     </string-array>

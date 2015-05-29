@@ -185,6 +185,11 @@ public class NavigationDrawerActivity extends Activity
             case 0:
                 fragment = GpsFragment.newInstance();
                 break;
+
+            case 1:
+                fragment = AnimationFragment.newInstance();
+                break;
+
             default:
                 fragment = PlanetFragment.newInstance(position);
         }

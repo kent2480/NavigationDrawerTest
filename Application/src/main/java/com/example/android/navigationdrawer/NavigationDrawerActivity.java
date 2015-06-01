@@ -190,6 +190,10 @@ public class NavigationDrawerActivity extends Activity
                 fragment = AnimationFragment.newInstance();
                 break;
 
+            case 2:
+                fragment = AnimationHLFragment.newInstance();
+                break;
+
             default:
                 fragment = PlanetFragment.newInstance(position);
         }

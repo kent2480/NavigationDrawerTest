@@ -1450,13 +1450,14 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f09002e;
         public static final int action_mode_bar_stub=0x7f09002d;
         public static final int action_mode_close_button=0x7f090020;
-        public static final int action_websearch=0x7f090070;
+        public static final int action_websearch=0x7f090073;
         public static final int activity_chooser_view_content=0x7f090021;
         public static final int alt=0x7f090068;
         public static final int always=0x7f090016;
         public static final int bea=0x7f09006c;
         public static final int beginning=0x7f090013;
         public static final int btn_alpha=0x7f090051;
+        public static final int btn_property=0x7f090071;
         public static final int btn_rotate=0x7f09004d;
         public static final int btn_scale=0x7f090049;
         public static final int btn_translate=0x7f090044;
@@ -1479,6 +1480,7 @@ containing a value of this type.
         public static final int ifRoom=0x7f090018;
         public static final int image=0x7f090023;
         public static final int image_alpha=0x7f090052;
+        public static final int image_property=0x7f090072;
         public static final int image_rotate=0x7f09004e;
         public static final int image_scale=0x7f09004a;
         public static final int image_translate=0x7f090045;
@@ -1539,6 +1541,7 @@ containing a value of this type.
         public static final int tcxo_stop=0x7f09006f;
         public static final int title=0x7f090027;
         public static final int tv_alpha=0x7f090050;
+        public static final int tv_property=0x7f090070;
         public static final int tv_rotate=0x7f09004c;
         public static final int tv_scale=0x7f090048;
         public static final int tv_translate=0x7f090043;
@@ -1583,9 +1586,10 @@ containing a value of this type.
         public static final int fragment_animation=0x7f03001a;
         public static final int fragment_basic=0x7f03001b;
         public static final int fragment_gps=0x7f03001c;
-        public static final int fragment_planet=0x7f03001d;
-        public static final int sample_dashboard_item=0x7f03001e;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
+        public static final int fragment_hl_animation=0x7f03001d;
+        public static final int fragment_planet=0x7f03001e;
+        public static final int sample_dashboard_item=0x7f03001f;
+        public static final int support_simple_spinner_dropdown_item=0x7f030020;
     }
     public static final class menu {
         public static final int navigation_drawer=0x7f0d0000;

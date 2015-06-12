@@ -529,8 +529,9 @@ int layout fragment_gps 0x7f03001c
 int layout fragment_hl_animation 0x7f03001d
 int layout fragment_planet 0x7f03001e
 int layout fragment_pro_animation 0x7f03001f
-int layout sample_dashboard_item 0x7f030020
-int layout support_simple_spinner_dropdown_item 0x7f030021
+int layout fragment_rot_animation 0x7f030020
+int layout sample_dashboard_item 0x7f030021
+int layout support_simple_spinner_dropdown_item 0x7f030022
 int menu navigation_drawer 0x7f0d0000
 int string abc_action_bar_home_description 0x7f0b0000
 int string abc_action_bar_home_description_format 0x7f0b0001

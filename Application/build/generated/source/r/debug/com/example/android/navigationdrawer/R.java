@@ -1597,8 +1597,9 @@ containing a value of this type.
         public static final int fragment_hl_animation=0x7f03001d;
         public static final int fragment_planet=0x7f03001e;
         public static final int fragment_pro_animation=0x7f03001f;
-        public static final int sample_dashboard_item=0x7f030020;
-        public static final int support_simple_spinner_dropdown_item=0x7f030021;
+        public static final int fragment_rot_animation=0x7f030020;
+        public static final int sample_dashboard_item=0x7f030021;
+        public static final int support_simple_spinner_dropdown_item=0x7f030022;
     }
     public static final class menu {
         public static final int navigation_drawer=0x7f0d0000;
